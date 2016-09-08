@@ -1,0 +1,12 @@
+Save Format v3.0(19990112)
+@begin Libraries
+ "isimple.pbl" "";
+@end;
+@begin Objects
+ "w_cus_list.srw" "isimple.pbl";
+ "isimple.sra" "isimple.pbl";
+ "p_isimple.srj" "isimple.pbl";
+ "d_acc_list.srd" "isimple.pbl";
+ "d_cus_list.srd" "isimple.pbl";
+ "d_trn_list.srd" "isimple.pbl";
+@end;
