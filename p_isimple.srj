@@ -1,0 +1,18 @@
+HA$PBExportHeader$p_isimple.srj
+EXE:isimple.exe,,0,1,1
+CMP:0,0,0,2,0,0,1
+COM:SAP
+DES:SAP Product File
+CPY:
+PRD:PowerBuilder Enterprise Series
+PVS:1.0.0.1
+PVN:1,0,0,1
+FVS:1.0.0.1
+FVN:1,0,0,1
+MAN:0,asInvoker,0
+PBD:isimple.pbl,,1
+OBJ:C:\Projects\PB126\ISIMPLE\isimple.pbl,d_trn_list,d
+OBJ:C:\Projects\PB126\ISIMPLE\isimple.pbl,w_cus_list,w
+OBJ:C:\Projects\PB126\ISIMPLE\isimple.pbl,d_acc_list,d
+OBJ:C:\Projects\PB126\ISIMPLE\isimple.pbl,d_cus_list,d
+OBJ:C:\Projects\PB126\ISIMPLE\isimple.pbl,isimple,a
