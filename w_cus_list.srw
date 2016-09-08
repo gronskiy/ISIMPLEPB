@@ -20,7 +20,7 @@ global type w_cus_list from window
 integer width = 5321
 integer height = 3152
 boolean titlebar = true
-string title = "Untitled"
+string title = "$$HEX8$$1a043b04380435043d0442044b042000$$ENDHEX$$- $$HEX6$$210447043504420430042000$$ENDHEX$$- $$HEX10$$2204400430043d04370430043a04460438043804$$ENDHEX$$"
 boolean controlmenu = true
 boolean minbox = true
 boolean maxbox = true
