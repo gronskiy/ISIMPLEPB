@@ -2,8 +2,6 @@ HA$PBExportHeader$w_cus_list.srw
 forward
 global type w_cus_list from window
 end type
-type st_2 from statictext within w_cus_list
-end type
 type st_trn from statictext within w_cus_list
 end type
 type st_1 from statictext within w_cus_list
@@ -30,7 +28,6 @@ boolean resizable = true
 long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
-st_2 st_2
 st_trn st_trn
 st_1 st_1
 dw_trn_list dw_trn_list
@@ -41,15 +38,13 @@ end type
 global w_cus_list w_cus_list
 
 on w_cus_list.create
-this.st_2=create st_2
 this.st_trn=create st_trn
 this.st_1=create st_1
 this.dw_trn_list=create dw_trn_list
 this.dw_acc_list=create dw_acc_list
 this.cb_1=create cb_1
 this.dw_cus_list=create dw_cus_list
-this.Control[]={this.st_2,&
-this.st_trn,&
+this.Control[]={this.st_trn,&
 this.st_1,&
 this.dw_trn_list,&
 this.dw_acc_list,&
@@ -58,7 +53,6 @@ this.dw_cus_list}
 end on
 
 on w_cus_list.destroy
-destroy(this.st_2)
 destroy(this.st_trn)
 destroy(this.st_1)
 destroy(this.dw_trn_list)
@@ -71,23 +65,6 @@ event open;dw_cus_list.SetTransObject(SQLCA)
 dw_acc_list.SetTransObject(SQLCA)
 dw_trn_list.SetTransObject(SQLCA)
 end event
-
-type st_2 from statictext within w_cus_list
-integer x = 539
-integer y = 36
-integer width = 1449
-integer height = 64
-integer textsize = -10
-integer weight = 400
-fontcharset fontcharset = russiancharset!
-fontpitch fontpitch = variable!
-fontfamily fontfamily = swiss!
-string facename = "Tahoma"
-long textcolor = 33554432
-long backcolor = 67108864
-string text = "$$HEX14$$22043504410442043e0432044b0439042000420435043a0441044204$$ENDHEX$$"
-boolean focusrectangle = false
-end type
 
 type st_trn from statictext within w_cus_list
 integer x = 18
