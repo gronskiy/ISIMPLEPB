@@ -1,0 +1,73 @@
+HA$PBExportHeader$m_mdi.srm
+forward
+global type m_mdi from menu
+end type
+type m_clientaccount from menu within m_mdi
+end type
+global type m_mdi from menu
+m_clientaccount m_clientaccount
+end type
+end forward
+
+global type m_mdi from menu
+m_clientaccount m_clientaccount
+end type
+global m_mdi m_mdi
+
+on m_mdi.create
+m_mdi=this
+call super::create
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_clientaccount=create m_clientaccount
+this.Item[UpperBound(this.Item)+1]=this.m_clientaccount
+end on
+
+on m_mdi.destroy
+call super::destroy
+destroy(this.m_clientaccount)
+end on
+
+type m_clientaccount from menu within m_mdi
+end type
+
+event clicked;OpenSheetDocked (w_cus_list, w_mdi, WindowDockLeft! , 'w_cus_list' )
+end event
+
+on m_clientaccount.create
+call super::create
+this.text = "$$HEX14$$2104470435044204300420003a043b04380435043d0442043e043204$$ENDHEX$$"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_clientaccount.destroy
+call super::destroy
+end on
+
