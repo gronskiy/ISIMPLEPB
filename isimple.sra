@@ -57,7 +57,8 @@ If SQLCA.SQLCode <> 0 Then
 End If	
 
 
-Open(w_cus_list)
+//Open(w_cus_list)
+Open(w_mdi)
 end event
 
 event close;DISCONNECT;
